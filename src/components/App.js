@@ -5,8 +5,8 @@ const App = () => {
   const API_KEY = "d1845658f92b31c64bd94f06f7188c9c";
   const [inputValue, setInputValue] = useState("");
   const [temperature, setTemperature] = useState("")
-  const [desc, setDesc] = useSate("")
-  const [url, setUrl] = useSate("")
+  const [desc, setDesc] = useState("")
+  const [url, setUrl] = useState("")
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
