@@ -33,7 +33,7 @@ const App = () => {
       />
 
       <div>{temperature}</div>
-      <div>{weather_description}</div>
+      <div>{desc}</div>
       <img src={url}></img>
     </div>
   );
