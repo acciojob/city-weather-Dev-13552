@@ -22,6 +22,7 @@ const App = () => {
       setTemperature(data.main.temp)
       setDesc(data?.weather?.[0]?.description)
       setUrl(`http://openweathermap.org/img/w/${data?.weather?.[0]?.icon}.png`)
+      setInputValue('')
     }
   };
 
@@ -32,11 +33,15 @@ const App = () => {
         type="text"
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
+        value={inputValue}
+        className="search"
       />
 
-      <div>{temperature}</div>
+      <div className="weather">
+        <div>{temperature}</div>
       <div>{desc}</div>
       <img src={url}></img>
+      </div>
     </div>
   );
 };
